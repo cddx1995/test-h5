@@ -1,0 +1,127 @@
+.container {
+	> view {
+		width: 100%;
+	}
+
+	.part1 {
+		height: 860rpx;
+		background: url(../../static/img/zhuce@2x_01.gif) no-repeat;
+		background-size: contain;
+		overflow: hidden;
+
+		.login-box {
+			position: relative;
+			width: 670rpx;
+			height: 400rpx;
+			background: #ffffff;
+			margin: 364rpx auto;
+			box-shadow: 0rpx 2rpx 14rpx 0rpx rgba(0, 0, 0, 0.09);
+			border-radius: 40rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.login-container {
+				width: 570rpx;
+				.login-content {
+					display: flex;
+					align-items: flex-end;
+					.phone,
+					.message {
+						flex: 1;
+						height: 80rpx;
+						border-bottom: 1px solid #000;
+						display: flex;
+						.icon {
+							display: flex;
+							align-items: flex-end;
+							image {
+								width: 50rpx;
+								height: 50rpx;
+							}
+						}
+						.input {
+							display: flex;
+							flex: 1;
+							align-items: flex-end;
+							margin-left: 60rpx;
+							input {
+								width: 100%;
+								height: 50rpx;
+							}
+							input::-webkit-input-placeholder {
+								color: rgba(153, 153, 153, 1);
+								font-size: 24px;
+							}
+						}
+					}
+					.phone {
+						margin-top: -50rpx;
+						margin-bottom: 50rpx;
+					}
+					
+					.code {
+						height: 60rpx;
+						margin-left: 30rpx;
+						color: #FFFFFF;
+						text-align: center;
+						line-height: 60rpx;
+						font-size: 24rpx;
+						border-radius: 10rpx;
+					}
+
+					.no-phone-number {
+						flex: 0 0 170rpx;
+						width: 170rpx;
+						background-color: gray;
+					}
+					.get-code {
+						flex: 0 0 170rpx;
+						width: 170rpx;
+						background-color: #3A68E1;
+					}
+					.wait-code {
+						flex: 0 0 170rpx;
+						width: 170rpx;
+						background-color: gray;
+					}
+					.reget-code {
+						flex: 0 0 210rpx;
+						width: 210rpx;
+						background-color: #3A68E1;
+					}
+				}
+			}
+			.begin {
+				width: 400rpx;
+				height: 100rpx;
+				background: url(../../static/img/begin@2x.png) no-repeat;
+				background-size: contain;
+				position: absolute;
+				bottom: -50rpx;
+			}
+		}
+	}
+
+	.part2 {
+		height: 869rpx;
+		background: url(../../static/img/zhuce@2x_02.gif) no-repeat;
+		background-size: contain;
+	}
+
+	.part3 {
+		height: 868rpx;
+		background: url(../../static/img/zhuce@2x_03.gif) no-repeat;
+		background-size: contain;
+	}
+
+	.part4 {
+		height: 813rpx;
+		background: url(../../static/img/zhuce@2x_04.png) no-repeat;
+		background-size: contain;
+	}
+}
+
+.uni-input-placeholder {
+	// font-size: 24rpx;
+	// height: 100%;
+}
