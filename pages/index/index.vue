@@ -100,7 +100,7 @@ export default {
 				data: {
 					username: this.iPhoneNumber + '',
 					code: this.iCode,
-					equipment: 3
+					equipment: 4
 				},
 				success: function(res) {
 					console.log('获取数据:' + JSON.stringify(res));
