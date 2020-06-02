@@ -38,7 +38,6 @@ export default {
 	data() {
 		return {
 			bHasGetCode: false, //第一次获取验证码
-			bHasPhoneNumber: false,
 			bWaitCode: false,
 			bHasCode: false,
 			iPhoneNumber: '',
@@ -87,27 +86,34 @@ export default {
 				uni.showModal({
 					content: '请输入手机号！'
 				});
-				return
+				return;
 			} else if (!this.iCode) {
 				uni.showModal({
 					content: '请输入验证码！'
 				});
-				return
+				return;
 			}
-			
-			this.sendRequest({
-				url: '/api/user/login',
-				data: {
-					username: this.iPhoneNumber + '',
-					code: this.iCode,
-					equipment: 4
-				},
-				success: function(res) {
-					console.log('获取数据:' + JSON.stringify(res));
-					// uni.navigateTo({
-					// 	url: '../video/video'
-					// });
-				}
+
+			// this.sendRequest({
+			// 	url: '/api/user/login',
+			// 	data: {
+			// 		username: this.iPhoneNumber + '' + '',
+			// 		code: this.iCode,
+			// 		equipment: 4,
+			// 		channel: 'share',
+			// 		inviteCode: this.iPhoneNumber + ''
+			// 	},
+			// 	success: function(res) {
+			// 		console.log('获取数据:' + JSON.stringify(res));
+			// 		if (!res.err && res.data.user_id) {
+			// 			uni.navigateTo({
+			// 				url: '../video/video'
+			// 			});
+			// 		}
+			// 	}
+			// });
+			uni.navigateTo({
+				url: '../video/video'
 			});
 		}
 	}

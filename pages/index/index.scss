@@ -6,7 +6,7 @@
 	.part1 {
 		height: 860rpx;
 		background: url(../../static/img/zhuce@2x_01.gif) no-repeat;
-		background-size: contain;
+		background-size: cover;
 		overflow: hidden;
 
 		.login-box {
@@ -105,19 +105,19 @@
 	.part2 {
 		height: 869rpx;
 		background: url(../../static/img/zhuce@2x_02.gif) no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 
 	.part3 {
 		height: 868rpx;
 		background: url(../../static/img/zhuce@2x_03.gif) no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 
 	.part4 {
 		height: 813rpx;
 		background: url(../../static/img/zhuce@2x_04.png) no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 }
 

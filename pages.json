@@ -1,17 +1,19 @@
 {
-	"pages": [{
-		"path": "pages/index/index",
-		"style": {
-			"navigationBarTitleText": "",
-			// "navigationBarBackgroundColor": "#2E3B8A",
-			"navigationStyle": "custom"
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				// "navigationBarBackgroundColor": "#2E3B8A",
+				"navigationStyle": "custom"
+			}
+		},{
+			"path": "pages/video/video",
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}
-	}, {
-		"path": "pages/video/video",
-		"style": {
-			"navigationStyle": "custom"
-		}
-	}],
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
